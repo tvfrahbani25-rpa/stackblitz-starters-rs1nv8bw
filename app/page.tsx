@@ -901,13 +901,13 @@ export default function App() {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold">
                   <Monitor className="w-5 h-5" />
                 </div>
-                <span className="text-xl font-extrabold text-white">Apex Online</span>
+                <span className="text-xl font-extrabold text-white">R Plus Academy</span>
               </div>
               <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
                 100% online 1-on-1 tutoring equipped with digital whiteboards, session replays, and world-class educators.
               </p>
               <div className="text-xs text-slate-500 pt-2">
-                © {new Date().getFullYear()} Apex Online Academy LLC. All rights reserved.
+                © {new Date().getFullYear()} R Plus Acadmey LLC. All rights reserved.
               </div>
             </div>
 
@@ -918,7 +918,7 @@ export default function App() {
                 <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Mathematics & AP Calculus</a></li>
                 <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Physics & Chemistry</a></li>
                 <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Digital SAT & ACT Prep</a></li>
-                <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Python Coding</a></li>
+                <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Music and Music Thoery</a></li>
                 <li><a href="#subjects" className="hover:text-cyan-400 transition-colors">Essay & AP Writing</a></li>
               </ul>
             </div>

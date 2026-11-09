@@ -132,7 +132,7 @@ export default function App() {
     {
       icon: Download,
       title: 'Instant Notes',
-      desc: 'Feel free to ask for a copy of notes or take a screenshot at the end of class to have access to all notes.'
+      desc: 'Ask for a copy of notes or take a screenshot at the end of class to have access to all notes.'
     },
     {
       icon: Globe,

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useMemo } from 'react';
+import { useForm } from '@formspree/react';
 import { 
   BookOpen, 
   GraduationCap, 
@@ -33,8 +34,10 @@ import {
   Globe,
   Sparkle
 } from 'lucide-react';
+import { useForm } from '@formspree/react';
 
 export default function App() {
+  const [formState, handleFormspreeSubmit] = useForm("mzeelzqr");
   // Mobile menu state
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -741,11 +744,12 @@ export default function App() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleBookingSubmit} className="space-y-4">
+                <form onSubmit={handleFormspreeSubmit} className="space-y-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Parent or Student Name</label>
                     <input 
                       type="text" 
+                      name="name"
                       required 
                       placeholder="e.g. Eleanor Vance" 
                       className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -756,6 +760,7 @@ export default function App() {
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
                     <input 
                       type="email" 
+                      name="email"
                       required 
                       placeholder="eleanor@example.com" 
                       className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -766,6 +771,7 @@ export default function App() {
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Phone Number</label>
                     <input 
                       type="tel" 
+                      name="phone"
                       required 
                       placeholder="(555) 000-0000" 
                       className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -776,6 +782,7 @@ export default function App() {
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Subject Needed</label>
                     <input 
                       type="text" 
+                      name="subject"
                       placeholder="e.g. AP Calculus AB, SAT Math, Physics" 
                       className="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     />

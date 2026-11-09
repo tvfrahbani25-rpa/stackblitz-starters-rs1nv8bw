@@ -725,24 +725,18 @@ export default function App() {
                 Meet an academic advisor over video to discuss student goals and test whiteboards.
               </p>
 
-              {submittedBooking ? (
-                <div className="p-6 rounded-2xl bg-emerald-950/80 border border-emerald-500/40 text-center space-y-3">
-                  <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
-                    <Check className="w-6 h-6" />
-                  </div>
-                  <h4 className="font-bold text-white text-lg">Strategy Call Requested!</h4>
-                  <p className="text-xs text-emerald-200 leading-relaxed">
-                    We have received your request! A link for your 15-minute Zoom call will be emailed to you shortly.
-                  </p>
-                  <button 
-                    onClick={() => setSubmittedBooking(false)}
-                    className="mt-2 text-xs font-bold text-cyan-400 underline"
-                  >
-                    Schedule for another student
-                  </button>
+              {formState.succeeded ? (
+                <div>
+                <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-4">
+                  <Check className="w-6 h-6 text-emerald-400" />
                 </div>
-              ) : (
-                <form onSubmit={handleFormspreeSubmit} className="space-y-4">
+                <h4 className="font-bold text-white text-lg">Strategy Call Requested!</h4>
+                <p className="text-xs text-emerald-200 leading-relaxed">
+                  We have received your request! A link for your 15-minute Zoom call will be emailed to you shortly.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleFormspreeSubmit} className="space-y-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Parent or Student Name</label>
                     <input 

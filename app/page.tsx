@@ -126,13 +126,13 @@ export default function App() {
     },
     {
       icon: PlayCircle,
-      title: 'HD Recorded Sessions',
-      desc: 'Every lesson is recorded so students can review before quizzes and midterms.'
+      title: 'HD Sessions',
+      desc: 'Every lesson is at least 1080p so students can clearly see their lessons.'
     },
     {
       icon: Download,
-      title: 'Instant Notes PDF Export',
-      desc: 'Download all notes, handwritten equations, and slides with a single click after class.'
+      title: 'Instant Notes',
+      desc: 'Feel free to ask for a copy of notes or take a screenshot at the end of class to have access to all notes.'
     },
     {
       icon: Globe,
@@ -359,7 +359,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-2xl font-extrabold text-cyan-400">98%</div>
-                  <div className="text-xs text-slate-400 font-medium">Grade Improvement</div>
+                  <div className="text-xs text-slate-400 font-medium">Show Grade Increase</div>
                 </div>
                 <div>
                   <div className="text-2xl font-extrabold text-indigo-400">1-on-1</div>
@@ -381,7 +381,7 @@ export default function App() {
                       <div className="w-3 h-3 rounded-full bg-amber-500"></div>
                       <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
                       <span className="ml-2 text-xs text-slate-400 font-mono flex items-center gap-1">
-                        <Lock className="w-3 h-3 text-emerald-400" /> apex-classroom.live
+                        <Lock className="w-3 h-3 text-emerald-400" /> r-plus-classroom.live
                       </span>
                     </div>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
@@ -418,7 +418,7 @@ export default function App() {
                       <Check className="w-4 h-4 text-cyan-400" /> Screen & File Sharing
                     </div>
                     <div className="p-2 rounded-lg bg-slate-900/60 border border-slate-700/50 flex items-center gap-2">
-                      <Check className="w-4 h-4 text-cyan-400" /> Instant PDF Notes
+                      <Check className="w-4 h-4 text-cyan-400" /> Live Notes & Lectures
                     </div>
                   </div>
                 </div>

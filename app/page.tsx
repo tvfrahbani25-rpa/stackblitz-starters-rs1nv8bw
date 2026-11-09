@@ -34,8 +34,6 @@ import {
   Globe,
   Sparkle
 } from 'lucide-react';
-import { useForm } from '@formspree/react';
-
 export default function App() {
   const [formState, handleFormspreeSubmit] = useForm("mzeelzqr");
   // Mobile menu state
@@ -154,7 +152,7 @@ export default function App() {
     },
     {
       name: 'Marcus Chen',
-      role: 'SAT Prep Student',
+      role: 'Music Student',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
       text: 'The digital whiteboard and screen-share test drills felt way more efficient than sitting in a learning/tutoring center. My class grade improved by 20%!',
       rating: 5,
@@ -948,11 +946,11 @@ export default function App() {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-cyan-400" />
-                  <span>(800) 555-0199</span>
+                  <span>(832)4456530</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-cyan-400" />
-                  <span>support@apexonline.edu</span>
+                  <span>rplusacademy00@outlook.com</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Globe className="w-4 h-4 text-cyan-400" />

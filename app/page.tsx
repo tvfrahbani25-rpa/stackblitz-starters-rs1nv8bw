@@ -732,7 +732,7 @@ export default function App() {
                 </div>
                 <h4 className="font-bold text-white text-lg">Strategy Call Requested!</h4>
                 <p className="text-xs text-emerald-200 leading-relaxed">
-                  We have received your request! A link for your 15-minute Zoom call will be emailed to you shortly.
+                  We have received your request! We will be in contact with you shortly. We may ask for more information to be sent via email prior to your Stradegy Call.
                 </p>
               </div>
             ) : (
